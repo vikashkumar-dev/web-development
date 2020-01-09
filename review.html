@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+html{
+    font-size:62.5%;
+
+}
+body{
+font-size: 1.6rem;
+
+}
+
+*{
+	margin:0;
+	padding:0;
+
+}
+.navigation-background { width: 6rem; height: 6rem; border-radius: 50%; background-image: radial-gradient(rgba(60, 93, 236,
+0.8), rgba(30, 233, 165, 0.8)); position: fixed; top: 6.5rem; right: 6.5rem; z-index: 1000; transition: all 0.8s; } .navigation-button
+{ width: 7rem; height: 7rem; border-radius: 50%; background-color: #fff; position: fixed; top: 6rem; right: 6rem; z-index:
+2000; box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); text-align: center; } .navigation-button-block { position: relative; margin-top:
+3.2rem; } .navigation-button-block, .navigation-button-block::after, .navigation-button-block::before { transition: background-color
+0.2s,transform 0.5s; display: inline-block; width: 4rem; border-radius: 0.5rem; height: 0.5rem; background-color: #000; }
+.navigation-button-block::after, .navigation-button-block::before { content: ""; left: 0; position: absolute; } .navigation-button-block::after
+{ top: -1rem; } .navigation-button-block::before { top: 1rem; } .navigation-nav { height: 100vh; position: fixed; z-index:
+1500; opacity: 0; width: 0; transition: all 0.8s cubic-bezier(0.66, 0, 0.07, 1); } .navigation-list { position: absolute;
+top: 50%; left: 50%; transform: translate(-50%, -50%); list-style: none; text-align: center; } .navigation-item:not(:last-child)
+{ margin-bottom: .5rem; } .navigation-link { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+.navigation-link:link, .navigation-link:visited { background-position: 0% 0%; font-size: 3rem; font-weight: 400; color: white;
+background-image: linear-gradient(120deg, transparent 50%, white 40%); text-transform: uppercase; padding: 1rem 2rem; border-radius:
+5px; background-size: 250%; text-decoration: none; display: inline-block; transition: all 0.8s; } .navigation-link:hover
+{ background-position: 100% 120%; box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2); color: black; transform: translateX(1rem);
+} .navigation-link:active { box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); } .navigation-checkbox { visibility: hidden; position:
+absolute; } .navigation-checkbox:checked ~ .navigation-background { transform: scale(50); } .navigation-checkbox:checked
+~ .navigation-nav { width: 100%; opacity: 1; } .navigation-checkbox:checked ~ .navigation-button .navigation-button-block
+{ background-color: transparent; } .navigation-checkbox:checked ~ .navigation-button .navigation-button-block::after, .navigation-checkbox:checked
+~ .navigation-button .navigation-button-block::before { content: ""; } .navigation-checkbox:checked ~ .navigation-button
+.navigation-button-block::before { background-color: #000; top: 0; left: 0; transform: rotate(45deg); } .navigation-checkbox:checked
+~ .navigation-button .navigation-button-block::after { top: 0; background-color: #000; transform: rotate(145deg); }
+
+img{
+	width:25px;
+	height:25px; 
+	text-align: left;
+}
+.content{
+    min-height: 600px;
+}
+
+  
+.banner-image{
+
+    padding-bottom:20px;
+    margin-bottom:20px; 
+     color:#f8f8f8;
+    background:url("./IMG12.jpg"); 
+    background-size:cover; 
+}
+.inner-banner-image{
+
+    padding-top:5PX;
+    display:inline-block; 
+    text-align:left;
+    width:100%;
+    margin:auto;   
+    height:100%; 
+    }
+    .banner_content{
+    left:20px;
+    position:relative;
+    padding-top:4%;
+    padding-bottom:4%;
+    overflow:hidden; 
+    text-align:left;
+    margin-bottom:12%;
+    background-color:rgba(0,0,0,0.7);
+    max-width:660px;   
+    border-radius:10px;
+}   
+.container{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+/*.box{
+	padding:10px;
+	margin:0 auto;
+	background-color: #000;
+	
+	width:40%;
+	height:40%;
+	border-radius: 25px;
+}*/
+</style>
+</head> 
+<body > 
+    
+<div class="navigation">
+    <input type="checkbox" id="nav-toggle" class="navigation-checkbox">
+    <label for="nav-toggle" class="navigation-button">
+        <span class="navigation-button-block"> &nbsp;</span>
+    </label>
+    <div class="navigation-background">
+        &nbsp;
+    </div>
+<nav class="navigation-nav">
+    <ul class="navigation-list">
+        <li class="navigation-item">
+            <a href="aboutus.html" class="navigation-link">About Us</a>
+        </li>
+        <li class="navigation-item">
+            <a href="index.html" class="navigation-link">HOME</a>
+        </li>
+        <li class="navigation-item">
+            <a href="registration.html" class="navigation-link">Test Drive</a>
+        </li>
+        <li class="navigation-item">
+            <a href="review.html" class="navigation-link">reviews </a>
+        </li>
+        <li class="navigation-item">
+            <ul>
+                <a href="car1.html" class="navigation-link">Mustang ul </a>
+                <a href="car2.html" class="navigation-link">Lamborgini s</a>
+                <a href="car3.html" class="navigation-link">Lamborgini l</a>
+
+            </ul>
+        </li>
+    </ul>
+
+</nav>
+
+
+</div>
+
+
+	<div class="content">  
+
+	<div class="banner-image"> 
+
+		<h1><span style="color:#262626;font-size: 50px;text-align:center">TESTIMONIALS</span></h1>  
+		<h3><span style="color:#999999;font-size: 20px;text-align:center">Our Customers Says We are the Best!</span></h3><br><br><br><br>
+          <div class="inner-banner-image">  
+
+            <div class="banner_content">    
+                <img src="./ko.png"><p>Abhishek Gowtham<p>
+                <img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+	           <br><h3>Most bang for your buck!</h3><br>
+                <p>The 2018 Muatang GT or 5.0 is a great vehicle, at first look one may not be able to distinguish it from tge 15-17 models, however its a different car. I have owned a 15 . 5.0, and let me say this car is faster more powerful, more responsive, and has a better ride. It's a better car in every way. The car is for mustang lovers or driving enthusiasts. To take this car to the drag strip just won't do it any justice, one would have to open it up on a winding lonely country road to understand what it's all about. So if your looking for power great styling, and the ability to customize to your liking, I recommend the 2018 Mustang 5.0</p>  
+                
+            </div> 
+          </div>   
+           <div class="inner-banner-image">  
+
+            <div class="banner_content">    
+          <img src="./ko.png"><p>Vikash Das<p></p>
+                <img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+<br>
+<h3>Worth it. best choice at best price</h3>
+<br>
+                <p>Be it for it's substantial wheels or for it's advanced exterior features, I am proud to be an owner of an award winning ride. I noticed while driving on highways that the car's engine does not make too much of a noise even at maximum speed. In overall, it suits me very well.</p>  
+                
+            </div> 
+          </div>
+           <div class="inner-banner-image">  
+
+            <div class="banner_content">    
+                
+<img src="./ko.png">
+<p>Deepak kant
+    <p>
+                <img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+<br>
+<h3> Awesome one... Nothing is like this </h3>
+<br>
+    <p>I do believe in class and being non-classy is not my cup of tea. For long time I had been waiting for a luxurious classy car and this car has fulfilled it. This luxurious compact crossover car is much satisfying one with exotic interior. The rugged appearance as; well as elevated seat are also impressing one. Its efficient power trails are also amazing. Happy to own this car.</p>  
+                
+            </div> 
+          </div>
+         </div>  
+<!--
+<div class="box">
+	
+
+	<img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">
+	<img src="./star.png">*/-->
+</div>
+</body>
+</html>

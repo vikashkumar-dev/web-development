@@ -1,0 +1,118 @@
+
+<html>
+<head>
+<title>Test Drive</title>
+<style>
+html{
+	font-size:62.5%;
+}
+body{
+
+background-image:linear-gradient(110deg,yellow,orange);
+
+}
+form{
+font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+font-size:18px;
+}
+
+input{
+
+width: 200px;
+height:30px;
+border-radius:5px;
+border:thin solid black;
+
+}
+
+.navigation-background { width: 6rem; height: 6rem; border-radius: 50%; background-image: radial-gradient(rgba(60, 93, 236,
+0.8), rgba(30, 233, 165, 0.8)); position: fixed; top: 6.5rem; right: 6.5rem; z-index: 1000; transition: all 0.8s; } .navigation-button
+{ width: 7rem; height: 7rem; border-radius: 50%; background-color: #fff; position: fixed; top: 6rem; right: 6rem; z-index:
+2000; box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); text-align: center; } .navigation-button-block { position: relative; margin-top:
+3.2rem; } .navigation-button-block, .navigation-button-block::after, .navigation-button-block::before { transition: background-color
+0.2s, transform 0.5s; display: inline-block; width: 4rem; border-radius: 0.5rem; height: 0.5rem; background-color: #000;
+} .navigation-button-block::after, .navigation-button-block::before { content: ""; left: 0; position: absolute; } .navigation-button-block::after
+{ top: -1rem; } .navigation-button-block::before { top: 1rem; } .navigation-nav { height: 100vh; position: fixed; z-index:
+1500; opacity: 0; width: 0; transition: all 0.8s cubic-bezier(0.66, 0, 0.07, 1); } .navigation-list { position: absolute;
+top: 50%; left: 50%; transform: translate(-50%, -50%); list-style: none; text-align: center; } .navigation-item:not(:last-child)
+{ margin-bottom: .5rem; } .navigation-link { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+.navigation-link:link, .navigation-link:visited { background-position: 0% 0%; font-size: 3rem; font-weight: 400; color: white;
+background-image: linear-gradient(120deg, transparent 50%, white 40%); text-transform: uppercase; padding: 1rem 2rem; border-radius:
+5px; background-size: 250%; text-decoration: none; display: inline-block; transition: all 0.8s; } .navigation-link:hover
+{ background-position: 100% 120%; box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2); color: black; transform: translateX(1rem);
+} .navigation-link:active { box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); } .navigation-checkbox { visibility: hidden; position:
+absolute; } .navigation-checkbox:checked ~ .navigation-background { transform: scale(50); } .navigation-checkbox:checked
+~ .navigation-nav { width: 100%; opacity: 1; } .navigation-checkbox:checked ~ .navigation-button .navigation-button-block
+{ background-color: transparent; } .navigation-checkbox:checked ~ .navigation-button .navigation-button-block::after, .navigation-checkbox:checked
+~ .navigation-button .navigation-button-block::before { content: ""; } .navigation-checkbox:checked ~ .navigation-button
+.navigation-button-block::before { background-color: #000; top: 0; left: 0; transform: rotate(45deg); } .navigation-checkbox:checked
+~ .navigation-button .navigation-button-block::after { top: 0; background-color: #000; transform: rotate(145deg); }
+
+</style>
+</head>
+<body>
+
+<div class="navigation">
+	<input type="checkbox" id="nav-toggle" class="navigation-checkbox">
+	<label for="nav-toggle" class="navigation-button">
+		<span class="navigation-button-block"> &nbsp;</span>
+	</label>
+	<div class="navigation-background">
+		&nbsp;
+	</div>
+<nav class="navigation-nav">
+	<ul class="navigation-list">
+		<li class="navigation-item">
+			<a href="aboutus.html" class="navigation-link">About Us</a>
+		</li>
+		<li class="navigation-item">
+			<a href="index.html" class="navigation-link">HOME</a>
+		</li>
+		<li class="navigation-item">
+			<a href="registration.html" class="navigation-link">Test Drive</a>
+		</li>
+		<li class="navigation-item">
+			<a href="review.html" class="navigation-link">reviews </a>
+		</li>
+		<li class="navigation-item">
+			<ul>
+				<a href="car1.html" class="navigation-link">Mustang ul </a>
+				<a href="car2.html" class="navigation-link">Lamborgini s</a>
+				<a href="car3.html" class="navigation-link">Lamborgini l</a>
+
+			</ul>
+		</li>
+	</ul>
+
+</nav>
+
+
+</div>
+
+<center><h1 style="font-size:50px; "><solid>Text Drive Registration Form<solid></h1>
+
+<form method="post"><h3>
+Enter Your First Name : &nbsp <input type=text maxlength=20 size=30 name="T1" placeholder="Enter here"><br><br>
+Enter Your Last Name : &nbsp <input type=text maxlength=20 size=30 name="T2" placeholder="Enter here"><br><br>
+<span style="display:inline-block">Choose the model for test drive :</span><br>
+<span style="display:inline;">
+<input type=checkbox name="c1">Mustang GT Fastback UL<br><input type=checkbox name="c2">Lamborgini Aventador S<br><input type=checkbox name="c3">Lamborgini Aventador L<br>
+</span>
+<br><br>
+Enter your email address : &nbsp <input type=text maxlength=30 size=30 name="T2"><br><br>
+Enter your date of test drive : &nbsp <input type=date name="d1"><br><br>	
+Choose your payment method : 
+<select style="border:thin solid black; border-radius:5px;width:250px;height:30px;">
+<option>CASH</option>
+<option>DEBIT</option>
+<option>CREDIT</option>
+</select>
+<br>
+
+<br>
+Any specific comments : <textarea rows="5" cols="20" name="T3" placeholder="Enter your comments here" style="width:250px;height:60px;border:thin solid black;border-radius:50px;"></textarea><br><br>
+				<input type=submit value="submit" name="s1"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				<input type=reset value="reset" name="r2">
+</h3></center></form>
+</body>
+</html>

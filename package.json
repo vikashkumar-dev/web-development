@@ -1,0 +1,15 @@
+{
+  "name": "wtassignment",
+  "version": "1.0.0",
+  "description": "wt assignment by 10 strudent group ",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node-sass  ./aboutus.scss ./aboutus.css "
+  },
+  "author": "shashank",
+  "license": "ISC"
+}
